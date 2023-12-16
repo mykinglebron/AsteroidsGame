@@ -18,23 +18,29 @@ class Spaceship extends Floater
     myPointDirection= 0; //holds current direction the ship is pointing in degrees
   }
   //need setters and getters
-public void setSpeed(double x, double y) {
+  public void setSpeed(double x, double y) {
     myXspeed = x;
     myYspeed = y;
   }
-  
-  public void setPosition(){
-     myCenterX = (int)(Math.random()*400);
-     myCenterY = (int)(Math.random()*400);
-      myPointDirection = (int) (Math.random()*360)+1;
-     
-    
+
+  public void setPosition() {
+    myCenterX = (int)(Math.random()*400);
+    myCenterY = (int)(Math.random()*400);
+    myPointDirection = (int) (Math.random()*360)+1;
   }
-public double getX(){
+  public double getX() {
     return myCenterX;
   }
-  public double getY(){
+  public double getY() {
     return myCenterY;
   }
-
+  public double getXspeed(){
+    return myXspeed;
+  }
+  public double getYspeed(){
+    return myYspeed;
+  }
+  public double getMyPointDirection(){
+    return myPointDirection;
+  }
 }
