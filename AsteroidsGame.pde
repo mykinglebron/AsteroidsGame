@@ -82,7 +82,7 @@ public void keyPressed(){
  if(key == 's'){
    moveBackward = true;
  }
- if(key == ' '){
+ if(key == 'e'){
    shot.add(new Bullet(steph));
  }
 }
